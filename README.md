@@ -2,6 +2,32 @@
 
 SnagOTP is an open-source Android app that automatically reads, parses, and manages One-Time Passwords (OTPs) received from other companies via RCS/Google Messages. Built with a modern Material 3 UI, SnagOTP makes authenticating with OTPs faster and more convenient.
 
+## Repository Structure
+
+This repository is organized into distinct folders for different components of the SNAGOTP project:
+
+```
+snagotp/
+├── android/          # Android mobile application
+├── website/          # Web application
+├── backend/          # (Planned) Backend services and APIs
+├── docs/             # (Planned) Additional documentation
+└── README.md         # This file
+```
+
+### Current Components
+
+- **`/android`** - Contains the Android mobile application. See [android/README.md](android/README.md) for details.
+- **`/website`** - Contains the web application. See [website/README.md](website/README.md) for details.
+
+### Future Components
+
+- **`/backend`** - Backend services, APIs, and server-side logic (to be added)
+- **`/docs`** - Comprehensive documentation, guides, and specifications (to be added)
+- **`/shared`** - Shared libraries and common code (if needed)
+
+*Note: For specific setup requirements and implementation details for each component, please consult with the project owner.*
+
 ## Purpose
 
 SnagOTP aims to streamline the two-factor authentication (2FA) experience by automatically extracting OTP codes from incoming messages and making them instantly accessible. No more manual copying or switching between apps—SnagOTP handles OTP detection and clipboard management seamlessly.
@@ -31,12 +57,18 @@ SnagOTP aims to streamline the two-factor authentication (2FA) experience by aut
 git clone https://github.com/pvs-praneeth/snagotp.git
 cd snagotp
 
-# Build and install instructions will be added here
+# Navigate to the component you want to work on
+cd android/   # For Android app
+# or
+cd website/   # For web application
+
+# Build and install instructions will be added in each component's README
 ```
 
 ## Why SnagOTP?
 
 SnagOTP is designed for users who value:
+
 - **Speed**: No more manual OTP copying from messages
 - **Convenience**: Automatic clipboard integration for seamless pasting
 - **Transparency**: Open-source code that you can audit and trust
