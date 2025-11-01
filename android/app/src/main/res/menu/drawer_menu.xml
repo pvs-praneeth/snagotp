@@ -2,7 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
@@ -17,9 +16,12 @@
             android:icon="@android:drawable/ic_menu_preferences"
             android:title="Settings" />
         <item
+            android:id="@+id/nav_support"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Support" />
+        <item
             android:id="@+id/nav_help"
             android:icon="@android:drawable/ic_menu_help"
             android:title="Help" />
     </group>
-
 </menu>
