@@ -1,31 +1,53 @@
 # SnagOTP
 
-SnagOTP is a secure and user-friendly One-Time Password (OTP) authentication solution designed to enhance account security through time-based and counter-based authentication codes.
+SnagOTP is an open-source Android app that automatically reads, parses, and manages One-Time Passwords (OTPs) received from other companies via RCS/Google Messages. Built with a modern Material 3 UI, SnagOTP makes authenticating with OTPs faster and more convenient.
 
 ## Purpose
 
-SnagOTP aims to provide a reliable and easy-to-use two-factor authentication (2FA) system that helps users protect their accounts from unauthorized access. By generating time-sensitive codes, SnagOTP adds an essential layer of security to your digital accounts.
+SnagOTP aims to streamline the two-factor authentication (2FA) experience by automatically extracting OTP codes from incoming messages and making them instantly accessible. No more manual copying or switching between apps—SnagOTP handles OTP detection and clipboard management seamlessly.
 
 ## Main Features
 
-- **Time-Based OTP (TOTP)**: Generates temporary codes that expire after a set time period
-- **Counter-Based OTP (HOTP)**: Creates codes based on counter increments for one-time use
-- **Secure Storage**: Encrypted storage of authentication secrets
-- **Multi-Account Support**: Manage OTP codes for multiple accounts in one place
-- **QR Code Scanning**: Easy setup by scanning QR codes from supported services
-- **Backup & Restore**: Securely backup your authentication data
-- **Cross-Platform**: Compatible with multiple devices and operating systems
-- **Open Source**: Fully transparent codebase available for security audits
+- **Automatic OTP Detection**: Automatically reads and parses OTP codes from RCS/Google Messages
+- **Instant Clipboard Copy**: Copies extracted OTPs to clipboard for quick pasting (e.g., via Gboard)
+- **OTP History & Statistics**: View all received OTPs and track authentication patterns
+- **RCS/Google Messages Integration**: Works seamlessly with your existing messaging app
+- **Material 3 Design**: Modern, beautiful UI following latest Material Design guidelines
+- **Open Source**: Fully transparent codebase available for community review and contributions
+- **Privacy-Focused**: Processes messages locally on your device
+- **Multi-Account Support**: Manage OTPs from multiple services and accounts
+
+## How It Works
+
+1. **Receive**: SnagOTP monitors incoming RCS/Google Messages for OTP codes
+2. **Extract**: Automatically parses and identifies the OTP from the message
+3. **Copy**: Places the OTP on your clipboard, ready for instant pasting
+4. **Track**: Stores OTP history and provides usage statistics
 
 ## Getting Started
 
 ```bash
-# Installation instructions will be added here
+# Clone the repository
+git clone https://github.com/pvs-praneeth/snagotp.git
+cd snagotp
+
+# Build and install instructions will be added here
 ```
+
+## Why SnagOTP?
+
+SnagOTP is designed for users who value:
+- **Speed**: No more manual OTP copying from messages
+- **Convenience**: Automatic clipboard integration for seamless pasting
+- **Transparency**: Open-source code that you can audit and trust
+- **Privacy**: All OTP processing happens locally on your device
+- **Modern Design**: Beautiful Material 3 UI that feels native to Android
 
 ## How to Contribute
 
-We welcome contributions from the community! Here's how you can help:
+We welcome contributions from the community! SnagOTP is built collaboratively, and your ideas and improvements are valued.
+
+### Ways to Contribute
 
 1. **Fork the Repository**: Click the 'Fork' button at the top right of this page
 2. **Clone Your Fork**: 
@@ -52,19 +74,25 @@ We welcome contributions from the community! Here's how you can help:
 ### Contribution Guidelines
 
 - Follow the existing code style and conventions
-- Write clear commit messages
+- Write clear, descriptive commit messages
 - Add tests for new features
 - Update documentation as needed
 - Be respectful and constructive in discussions
+- Test on multiple Android versions if possible
+
+### Areas for Contribution
+
+- **Feature Development**: Add new OTP detection patterns or utility features
+- **UI/UX Improvements**: Enhance the Material 3 interface
+- **Bug Fixes**: Help identify and fix issues
+- **Documentation**: Improve README, code comments, or user guides
+- **Testing**: Add unit tests or integration tests
+- **Localization**: Add support for additional languages
+
+## Community & Collaboration
+
+SnagOTP is built on the principles of open-source collaboration. We believe that transparent development and community involvement create better, more trustworthy software. Join us in making OTP management easier for everyone!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any issues or have questions, please open an issue on GitHub.
-
-## Acknowledgments
-
-Thank you to all contributors who help make SnagOTP better!
+This project is open source and available for community contributions.
